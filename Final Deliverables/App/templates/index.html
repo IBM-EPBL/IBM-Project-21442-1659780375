@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <!-- Page Header -->
+     <header class="masthead" style="background-image: url('         {{ url_for('static', filename='img/home-bp.jpg') }}       ')"> )}}">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>GESTFUL</h1>
+              <span class="subheading">A Gesture Based Tool for Sterile Browsing of Radiology Images</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Humans are able to recognize body and sign language easily. This is possible due to the combination
+of vision and synaptic interactions that were formed along brain development . In order to replicate
+this skill in computers, some problems need to be solved: how to separate objects of interest in
+images and which image capture technology and classification techniques are more appropriate,
+among others.</p>
+<br>
+<p>In this project Gesture based Desktop automation ,First the model is trained pre-trained on the
+images of different hand gestures, such as showing numbers with fingers as 1, 2, 3, 4. This model
+uses the integrated webcam to capture the video frame. The image of the gesture captured in the
+video frame is compared with the pretrained model and the gesture is identified. If the gesture
+prediction is 1 then images are blurred; 2, image is resized; 3, image is rotated etc.</p>
+          </div>
+      </div>
+    </div>
+    
+
+{% endblock %}
+
+    
+
